@@ -1092,6 +1092,8 @@ class UjiView(object):
         else:
             self.unmark()
 
+        self.next()
+
     def upload(self):
         line = self.lines[self.cursor_offset]
         if not self.is_checkbox(line) or "📎" not in line:
